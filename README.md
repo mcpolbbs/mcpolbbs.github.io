@@ -8,5 +8,5 @@ WELCOME to my homepage project GitHub
 我的QQ:3097818372
 MY QQ:3097818372
 
-全新网站源码0.2发布
-Brand new website source code 0.2 released
+全新网站源码0.3发布
+Brand new website source code 0.3 released
