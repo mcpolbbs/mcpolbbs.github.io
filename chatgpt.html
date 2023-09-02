@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCPOLBBS-ChatGPT在线</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    
+    .chat-container {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    
+    .message-container {
+      margin-bottom: 20px;
+    }
+    
+    .user-message {
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    .assistant-message {
+      background-color: #d9edff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    .input-container {
+      display: flex;
+      margin-top: 20px;
+    }
+    
+    .input-container input[type="text"] {
+      flex-grow: 1;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .input-container button {
+      padding: 8px 15px;
+      margin-left: 10px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .input-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MCPOLBBS论坛 for ChatGPT</h1>
+  </header>
+  
+  <div class="chat-container">
+    <div class="message-container">
+      <div class="assistant-message">
+        欢迎使用 ChatGPT4.0！请提出你的问题。
+      </div>
+    </div>
+    
+    <div class="input-container">
+      <input type="text" id="userInput" placeholder="请输入你的问题">
+      <button onclick="sendMessage()">发送</button>
+    </div>
+  </div>
+  
+  <script>
+    var chatContainer = document.querySelector(".chat-container");
+    var userInput = document.getElementById("userInput");
+    
+    function sendMessage() {
+      var userMessage = userInput.value;
+      
+      // 发送用户消息
+      var userMessageContainer = document.createElement("div");
+      userMessageContainer.classList.add("message-container");
+      
+      var userMessageElement = document.createElement("div");
+      userMessageElement.classList.add("user-message");
+      userMessageElement.textContent = userMessage;
+      
+      userMessageContainer.appendChild(userMessageElement);
+      chatContainer.appendChild(userMessageContainer);
+      
+      // 发送机器人回复（此处为示例，实际应通过 AJAX 请求和后端交互）
+      var assistantMessageContainer = document.createElement("div");
+      assistantMessageContainer.classList.add("message-container");
+      
+      var assistantMessageElement = document.createElement("div");
+      assistantMessageElement.classList.add("assistant-message");
+      assistantMessageElement.textContent = "因服务器过载,服务器已关闭";
+      
+      assistantMessageContainer.appendChild(assistantMessageElement);
+      chatContainer.appendChild(assistantMessageContainer);
+      
+      // 清空输入框
+      userInput.value = "";
+      
+      // 滚动到聊天底部
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+  </script>
+</body>
+</html>
