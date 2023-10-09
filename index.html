@@ -106,6 +106,16 @@ a:active {text-decoration:underline;}  /* selected link */
 </body></span> </blockquote>
 
 	
+<p>现在是北京时间:</p>
+<p id="demo"></p>
+<script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer(){
+	var d=new Date();
+	var t=d.toLocaleTimeString();
+	document.getElementById("demo").innerHTML=t;
+}
+	</script>
 
 
 	<p>本站已运行<span id="iday"></span>天<script>function siteRun(d){var nowD=new Date();return parseInt((nowD.getTime()-Date.parse(d))/24/60/60/1000)} document.getElementById("iday").innerHTML=siteRun("2023/01/01");</script></p>
