@@ -109,10 +109,10 @@ function getCookie(cname){
 function checkCookie(){
 	var user=getCookie("username");
 	if (user!=""){
-		alert("欢迎 " + user + " 再次访问");
+		alert("欢迎 " + user + " 再次使用本服务");
 	}
 	else {
-		user = prompt("请输入你的名字:","");
+		user = prompt("请输入你的用户名:","");
   		if (user!="" && user!=null){
     		setCookie("username",user,30);
     	}
