@@ -1,121 +1,399 @@
-<!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-</head>
-<meta name="msvalidate.01" content="9FEDDB24216697CE21502CEA0F81474D" />
-<body>
-<link rel="shortcut icon" href="favicon.ico">
-
-	 <a href="index.html">
-<style>
-    span {
-        background: linear-gradient(to right, red, blue);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    </style>
-
-<body>
-        <span>首页</span></a>
- <a href="chatgpt.html">	
-<style>
-    span {
-        background: linear-gradient(to right, red, blue);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    </style>
-
-<body>
-        <span>chatgpt</span></a>
 	
-<style>
-a:link {text-decoration:none;}    /* unvisited link */
-a:visited {text-decoration:none;} /* visited link */
-a:hover {text-decoration:underline;}   /* mouse over link */
-a:active {text-decoration:underline;}  /* selected link */
-</style>
-
-<a href="html.html" target="_blank">html</a>
-
-<body>
-<p><b><a href="?index.html" target="_blank"></a></b></p>
-   <a href="文章项目.html">
-<style>
-    span {
-        background: linear-gradient(to right, red, blue);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    </style>
-
-<body>
-        <span>文章</span></a>
-   <a href="关于我们.html">
-<style>
-    span {
-        background: linear-gradient(to right, red, blue);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    </style>
-
-<body>
-        <span>联系我们</span></a>
-   <a href="chatgpt.html">
-        <span>    <meta charset="utf-8">
-    <style>
-    span {
-        background: linear-gradient(to right, red, blue);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    </style>
-
-<body>
-        <span>ChatGPT在线</span>
-</body></span></a>
-	
-<a href="server.html">
-        <span>    <meta charset="utf-8">
-    <style>
-    span {
-        background: linear-gradient(to right, red, blue);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-    </style>
-
-<body>
-        <span>MC服务器-2b2t.xin</span>
-</body></span></a>
-   
-   <title>MCPOLBBS论坛-专注于mc和chatgpt</title> 
-<font color=orange> 
-   <p><center><h1>MCPOL-BBS论坛</h1></center></p>
-  </font>
-
- 
-<body>
-        <span>MINECRAFT！你热爱的游戏</span>
-</body></span> </blockquote>
-
-	
-<p>现在是北京时间:</p>
-<p id="demo"></p>
-<script>
-var myVar=setInterval(function(){myTimer()},1000);
-function myTimer(){
-	var d=new Date();
-	var t=d.toLocaleTimeString();
-	document.getElementById("demo").innerHTML=t;
-}
+	<!-- jsDelivr CDN fallback -->
+	<script defer>
+		(a=>{"use strict";let r,s,e;const l=["cdn.jsdelivr.net","fastly.jsdelivr.net","gcore.jsdelivr.net","testingcf.jsdelivr.net","test1.jsdelivr.net"],t="//",n=l[0],i=Date.now(),o=2e3,c="jsdelivr-auto-fallback",f="/gh/PipecraftNet/jsdelivr-auto-fallback@main/empty.css?",d=e=>e&&e.includes(t+n),m=e=>e.replace(t+n,t+r),u=window.setTimeout,v=a.querySelectorAll.bind(a),g=()=>{let e,t;for(e of v('link[rel="stylesheet"]'))t=e.href,d(t)&&!t.includes(f)&&(e.href=m(t));for(e of v("script"))if(t=e.src,d(t)){const r=a.createElement("script");r.src=m(t),e.defer=!0,e.src="",e.before(r),e.remove()}for(e of v("img"))t=e.src,d(t)&&(e.src="",e.src=m(t));for(e of v("*[style]"))t=e.getAttribute("style"),d(t)&&e.setAttribute("style",m(t));for(e of v("style"))t=e.innerHTML,d(t)&&(e.innerHTML=m(t))},y=()=>{!e&&s&&r&&(console.warn(n+" is not available. Use "+r),e=!0,u(g,0),u(g,20),setInterval(g,500))},b=(()=>{try{return Object.assign({},JSON.parse(localStorage.getItem(c)||"{}"))}catch{return{}}})();var h=()=>{b.time=i,b.failed=!1,b.fastNode=null;for(const t of l)((e,t)=>{let r;const s=a.createElement("link"),l=e=>{r&&(clearTimeout(r),r=0,e||(s.href="data:text/plain;base64,"),s.remove(),t(e))};r=u(l,o),s.addEventListener("error",()=>l(!1)),s.addEventListener("load",()=>l(!0)),s.rel="stylesheet",s.text="text/css",s.href=e+f+i,a.head.insertAdjacentElement("afterbegin",s)})("https://"+t,e=>{e||t!==n||(s=!0,b.failed=!0),e&&!r&&(r=t),e&&!b.fastNode&&(b.fastNode=t),y()});u(()=>{s&&!r&&(r=l[1],y()),localStorage.setItem(c,JSON.stringify(b))},o+100)};b.time&&i-b.time<36e5&&b.failed&&b.fastNode?(s=!0,r=b.fastNode,y(),u(h,1e3)):h()})(document);
 	</script>
+	
+    <meta charset="utf-8">
+    <title>MCPOLBBS论坛</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/css/mdui.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/assets/css/index.css">
+    <!-- <link rel="stylesheet" href="/assets/css/detaile.css"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1625701_q2422cy34wn.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3063123_e10jre1h39.css">
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/xiarimangguo/aLive2D@sites/files/avatar.jpg">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-22S6K7R7RR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-22S6K7R7RR');
+    </script>
+
+    <!-- Clarity tracking code for https://minibi.top/ -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "809fwachp9");
+    </script>
+
+    <script>
+        console.log("\n %c Made with love %c by AyagawaSeirin | qwq.best ","color:#444;background:#eee;padding:5px 0;","color:#F8F8FF;background:#F4A7B9;padding:5px 0;");
+    </script>
+
+</head>
+<body class="mdui-theme-primary-pink mdui-theme-accent-pink">
+<div id="rin-bg"></div>
+<main id="rin-main">
+    <div class="mdui-row">
+        <div class="mdui-col-xs-12 mdui-col-md-2">
+            <div class="rin-left">
+                <div class="rin-logo">
+                    <img src="https://cdn.jsdelivr.net/gh/xiarimangguo/aLive2D@sites/files/avatar.jpg">
+                </div>
+                <div class="rin-left-title">mcpolbbs&nbsp;论&nbsp;坛&nbsp;</div>
+                <div class="rin-left-title2">McPolbbs Forum</div>
+                <div class="rin-left-slogan">「江山代有才人出，各领风骚数百年」</div>
 
 
-	<p>本站已运行<span id="iday"></span>天<script>function siteRun(d){var nowD=new Date();return parseInt((nowD.getTime()-Date.parse(d))/24/60/60/1000)} document.getElementById("iday").innerHTML=siteRun("2023/01/01");</script></p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1345872140&auto=1&height=66"></iframe>
-	<div class="feedback">©2023 mcpolbbs&nbsp;&nbsp;</div>                                         
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="chatgpt.html" target="_blank"><span class="iconfont iconBlog"></span>ChatGPT</a>
+
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="文章项目" target="_blank"><span class="iconfont icon-shouyinji01"></span>文章</a>
+
+<!--
+
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="#" target="_blank"><span class="iconfont iconwiki"></span> Wiki</a>
+
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="#" target="_blank"><span class="iconfont iconrizhi"></span> Diary</a>
+
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="#" target="_blank"><span class="iconfont iconfriend"></span> Friends</a>
+
+-->
+
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="关于我们.html" target="_blank"><span class="iconfont iconCommentenable"></span> 关于我们</a>
+
+<!--
+                
+                <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize" href="#" target="_blank"><span class="iconfont iconabout"></span> About</a>
+-->
+
+                
+
+            </div>
+        </div>
+        <div class="mdui-col-xs-12 mdui-col-md-10">
+            <div class="mdui-card rin-card">
+<!--                <div class="rin-card-title">关于我</div>-->
+                <div class="rin-card-part" id="introduce" style="margin-top: 0;">
+                    <div class="rin-card-content mdui-typo"><h4>你好呀，这里是mcpolbbs论坛呀～</h4>
+                        终于等到你～欢迎来我的网站呀～<br>
+                        <h4>下面让我来介绍一下自己吧</h4>
+                        本人坐标湖南怀化，是非常喜欢信息技术的，同时也对html感兴趣<br><br>
+                       <br><br>
+                        那时，别人都在谈论自己的游戏，而我已经敲开了互联网的大门<br><br>
+                        在小学时，我编写了<a href="https://minibi.top/old" target="_blank" style="color:dodgerblue;">我的第一个HTML页面</a>，采用的是响应式布局<br><br>
+                        当它在浏览器中成功显示时，那种成就感是我永远不会忘记的<br><br>
+                      <br><br>
+                        它带给我广阔的天地，一个懵懂的少年，敲开了新世界的大门
+                        <br>
+                        <h4>??官方交流群</h4>
+                        <blockquote>
+                        你是信的开头诗的内容 <br>
+                        <br> 童话的结尾 <br>
+                        <br>你是理所当然的奇迹 <br>
+                        <br>你是月色真美<br>
+                      
+                        </blockquote>
+                        欢迎你加入minibi.top官方交流群～<br><br>
+                        快来一起加入讨论技术问题啦～<br>
+                        <h5>加入</h5>
+                        快来加入吧～<br>
+                       <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=J3HvAix2ddp8z-Qkwl5-9Hct8srZs37h&amp;authKey=jiPixarl9ljeh6RJoAQO2VrH1dxp4o0wi%2B1W%2FGczY4ejHSQCaKFaVSVXqeolBicR&amp;noverify=0&amp;group_code=565711956" target="_blank">    <meta charset="utf-8">
+    <style>
+    span {
+        background: linear-gradient(to right, red, blue);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    </style>
+
+        <span>官方群聊</span> <br>
+
+ <br></a>一起来呀～(743182462)</a></br><br>
+                        <br>
+                       
+                        <h4><b>夏日芒果の网络</b></h4>
+                        
+                        ? 还可以使用 <a href="https://minibi.top/chatgpt" style="color:dodgerblue;">Free ChatGPT Web</a> 的免费chatgpt服务，<br><br>
+                        ? 如果你喜欢的话，你还可以使用我的子域搭建网站，也就是xxx.minibi.top这样的呀~<br><br>
+                        ? 也欢迎你来我的MC服务器...考...古...<br><br>
+				        <br>
+                     
+          
+                        <br>
+                        ?快来讨论区交流你的看法吧～<br>
+                        <br>
+                        快来访问我的<a href="https://github.com/mcpolbbs" target="_blank" style="color:dodgerblue;">Github主页</a>吧，相信一定会带给你不一样的收获。<br>
+                        另外，别忘了给喜欢的项目点一个star再走啊～<br><br>
+                       Thank You!!!<br>
+                    </div>
+                </div>
+                <!--        <div class="rin-tr"></div>-->
+                <div class="rin-card-part" id="fighting">
+                    <div class="rin-card-title2 mdui-typo"><a href="#fighting">#</a> 战斗力</div>
+                    <div class="mdui-container">
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-2 mdui-col-md-1"
+                                 mdui-tooltip="{content: '制作网站的能力:非常菜'}">
+
+                                <div class="rin-progress-title">
+                                    HTML/CSS
+                                </div>
+
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 15%;"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '赞美世界上最好的语言的能力'}">
+                                <div class="rin-progress-title">
+                                    ASP
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 30%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '现用现学的能力:我太蔡了'}">
+                                <div class="rin-progress-title">
+                                    JavaScript
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 10%;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4" mdui-tooltip="{content: '真的非常可爱√'}">
+                                <div class="rin-progress-title">
+                                    萌属性
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 95%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '让事情发生的能力'}">
+                                <div class="rin-progress-title">
+                                    搞事情
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 45%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '对他人的情感深度'}">
+                                <div class="rin-progress-title">
+                                    情感
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mdui-row">
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '社交能力<del>(社恐</del>'}">
+                                <div class="rin-progress-title">
+                                    社交
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 20%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '做事情的耐心程度'}">
+                                <div class="rin-progress-title">
+                                    耐心
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 60%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                 mdui-tooltip="{content: '对这个世界热爱的程度'}">
+                                <div class="rin-progress-title">
+                                    世界
+                                </div>
+                                <div class="mdui-progress">
+                                    <div class="mdui-progress-determinate" style="width: 20%;"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="rin-card-part" id="contact">
+                    <div class="rin-card-title2 mdui-typo"><a href="#contact">#</a> 咱生活的地方</div>
+
+                    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-black mdui-text-capitalize" href="https://github.com/mcpolbbs" target="_blank"><span class="iconfont icongithub"></span> Github</a>
+
+                    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize"
+                       href="mailto:3097818372@qq.com" target="_blank"><span
+                            class="iconfont iconmail_fill"></span> Mail</a>
+
+                </div>
+
+                <div class="rin-card-part" id="article">
+                    <div class="rin-card-title2 mdui-typo"><a href="#article">#</a> 文章</div>
+
+                    <a target="_blank" href="文章项目.html">
+                    <div class="mdui-card rin-card rin-card-article" style="margin-bottom: 10px;">
+                        <div class="rin-article-title">ChatGPT 1元注册</div>
+                        <div class="rin-article-content">快来加入ChatGPT的一员吧！</div>
+                    </div>
+                    </a>
+
+                    <a class="rin-article-more" target="_blank" href="#">
+                        Learn more...
+                    </a>
+
+                </div>
+
+
+                <div class="rin-card-part" id="works">
+                    <div class="rin-card-title2 mdui-typo"><a href="#works">#</a> 作品</div>
+
+                    <a target="_blank" href="old.html">
+                        <div class="mdui-card rin-card rin-card-article" style="margin-bottom: 5px;">
+                            <div class="rin-article-title">旧主页</div>
+                            <div class="rin-article-content"没有描述～ </div>
+                        </div>
+                    </a>
+                   
+                    <a class="rin-article-more" target="_blank" href="https://github.com/xiarimangguo/">
+                        Learn more...
+                    </a>
+
+                </div>
+
+
+                <div class="rin-tr"></div>
+
+                <div class="rin-card-part" id="last">
+                    <div class="rin-card-title2">MCPOLBBS论坛有你</div>
+                    <div class="rin-card-content">一切都是命运石之门的选择，顺其自然吧</div>
+                </div>
+
+                <div class="rin-card-part" id="footer">
+    
+                    <div class="rin-card-content">?2023  MCPOLBBS | By MCPOLBBS  | 404: <a
+                            href="404.html" id="bg-link" target="_blank">404</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- HLS.js Start -->
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  var video = document.getElementById('radio');
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.addEventListener('canplay', function () {
+      video.play();
+    });
+  } else {
+    if (Hls.isSupported()) {
+      var hls = new Hls({
+        debug: true,
+      });
+      hls.loadSource('https://106.14.163.159:1936/live/.m3u8');
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+        video.muted = true;
+        video.play();
+      });
+    }
+  }
+</script>
+<!-- HLS.js End -->
+<!-- JS for Now Playing -->
+<script>
+setInterval(function(){
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) { 
+        window.applicationCache.update(); 
+    }
+	getNowPlaying();
+},15000);
+function getNowPlaying() {
+    var xhr = xhrAjax();
+    xhr.open("GET","https://91.210.165.131/api/Radio/NowPlaying/",true);
+    xhr.send();
+    xhr.onreadystatechange = function(){
+        if (xhr.readyState === 4) {
+            switch (xhr.status) {
+            	//已找到
+                case 200:
+                case 304:
+                    document.getElementById("playing").innerHTML = xhr.responseText;
+                    document.getElementById("album").src = "https://91.210.165.131/api/Radio/getCover?Purge="+Date.now();
+                     break;
+                //无权限
+                case 401:
+                case 403:
+                case 405:
+                     break;
+                //未找到
+                case 404:
+                case 410:
+                     break;
+                //发生错误
+                case 400:
+                case 408:
+                case 500:
+                case 502:
+                case 503:
+                case 504:
+                     break;
+                default:
+                     break;
+            }
+        }
+    }
+}
+function xhrAjax() {
+	try{
+		return new XMLHttpRequest();
+	} catch(e) {
+		try{
+			return new ActiveXObject("Msxml2.XMLHTTP");
+		} catch(e) {
+			try{
+				return new ActiveXObject("Microsoft.XMLHTTP");
+			} catch(e) {
+				return;
+			}
+		}
+	}
+}
+</script>
+<!-- JS for Now Playing -->
+<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/js/mdui.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/assets/js/main.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/coolfishstudio/cfs.snow.js/CFS.Snow.min.js"></script>
+<script>snow.down()</script>
 </body>
-</html>
+				</html>
