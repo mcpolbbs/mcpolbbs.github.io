@@ -395,5 +395,110 @@ function xhrAjax() {
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/coolfishstudio/cfs.snow.js/CFS.Snow.min.js"></script>
 <script>snow.down()
 </script>
+
+	
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		button {
+			background-color: #333;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 1rem;
+			padding: 10px 20px;
+		}
+		
+		h1 {
+			font-size: 2.5rem;
+			margin: 0;
+		}
+		main {
+			margin: 20px;
+		}
+		p {
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		
+		.cookie-notice {
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #ccc;
+			color: #333;
+			font-size: 0.8rem;
+			padding: 10px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+		.cookie-notice button {
+			background-color: #ccc;
+			color: #333;
+			font-size: 0.8rem;
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+		<button id="agree-btn">同意使用cookie</button>
+		
+	</main>
+	<div class="cookie-notice" id="cookie-notice" style="display:none;">
+		<p>本网站使用cookie来提供更好的用户体验。继续使用本网站即表示您同意我们使用cookie。</p>
+		<button id="cookie-ok-btn">我明白了</button>
+	</div>
+	<script>
+		function setCookie(name, value, days) {
+			var expires = "";
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+				expires = "; expires=" + date.toUTCString();
+			}
+			document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+		}
+		function getCookie(name) {
+			var nameEQ = name + "=";
+			var ca = document.cookie.split(';');
+			for(var i=0;i < ca.length;i++) {
+				var c = ca[i];
+				while (c.charAt(0)==' ') c = c.substring(1,c.length);
+				if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+			}
+			return null;
+		}
+		function eraseCookie(name) {   
+			document.cookie = name+'=; Max-Age=-99999999;';  
+		}
+		var agreeBtn = document.getElementById('agree-btn');
+		var cookieNotice = document.getElementById('cookie-notice');
+		var cookieOkBtn = document.getElementById('cookie-ok-btn');
+		agreeBtn.addEventListener('click', function() {
+			setCookie('agreed', 'true', 365);
+			location.reload();
+		});
+		if (!getCookie('agreed')) {
+			cookieNotice.style.display = 'block';
+		}
+		cookieOkBtn.addEventListener('click', function() {
+			setCookie('cookie-notice', 'true', 365);
+			cookieNotice.style.display = 'none';
+		});
+		if (!getCookie('cookie-notice')) {
+			setTimeout(function() {
+				cookieNotice.style.display = 'block';
+			}, 3000);
+		}
+	</script>
 </body>
 	</html>
