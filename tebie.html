@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>站长生日🎂倒计时</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .countdown {
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 48px;
+      color: #333;
+    }
+    
+    .timer {
+      font-size: 24px;
+      color: #666;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="countdown">
+    <h1>站长生日🎂</h1>
+    <div class="timer" id="timer"></div>
+  </div>
+
+  <script>
+    // 设置目标日期时间
+    var targetDate = new Date("2023-11-04T00:00:00+08:00").getTime();
+
+    // 更新倒计时
+    var timer = setInterval(function() {
+      // 获取当前日期时间
+      var now = new Date().getTime();
+
+      // 计算剩余时间
+      var remainingTime = targetDate - now;
+
+      // 计算天、小时、分钟和秒数
+      var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+      // 在页面上显示倒计时
+      document.getElementById("timer").innerHTML = days + "天 " + hours + "小时 " + minutes + "分钟 " + seconds + "秒";
+
+      // 如果倒计时结束，则清除计时器
+      if (remainingTime < 0) {
+        clearInterval(timer);
+        document.getElementById("timer").innerHTML = "生日结束了，又大了一岁";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
